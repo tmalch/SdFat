@@ -94,7 +94,7 @@
 #define ENABLE_DEDICATED_SPI 1
 #else  // defined(__AVR__) && FLASHEND < 0X8000
 // All other boards.
-#define ENABLE_DEDICATED_SPI 1
+#define ENABLE_DEDICATED_SPI 0
 #endif  // defined(__AVR__) && FLASHEND < 0X8000
 //-----------------------------------------------------------------------------
 /**
@@ -109,7 +109,7 @@
  *
  * 3 - An external SPI driver derived from SdSpiBaseClass is always used.
  */
-#define SPI_DRIVER_SELECT 0
+#define SPI_DRIVER_SELECT 3
 //------------------------------------------------------------------------------
 /**
  * SD_CHIP_SELECT_MODE defines how the functions
